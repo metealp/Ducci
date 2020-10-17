@@ -49,6 +49,7 @@ struct ContentView: View {
                 
                 Section (header: Text("Total per Person")) {
                     Text("$\(totalPerPerson, specifier: "%.2f")")
+                        .foregroundColor(tipPercentages[tipPercentage] != 0 ? .blue : .red)
                 }
             }
 //            .navigationBarTitle("Ducci", .inline)
